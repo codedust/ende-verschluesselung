@@ -89,7 +89,7 @@ input {
 
 img {
 	display: block;
-	margin: 1em auto auto auto;
+	margin: 1em auto 2em auto;
 }
 
 .notify {
