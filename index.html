@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8" />
+	<title>Ende-Verschlüsselung</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h1>The next step: Die Ende-Verschlüsselung!</h1>
+	<p>Während andere Messenger, Telemedizin-Anwendungen und Videokonferenzlösungen immernoch keine <a href="https://de.wikipedia.org/wiki/E2EE">Ende-zu-Ende-Verschlüsselung</a> umgesetzt haben, gehen wir den nächsten Schritt und machen vor, wie es noch sicherer geht. Bei der Ende-zu-Ende-Verschlüsselung kann selbst der Anbieter eines Kommunikationsdienstes nicht auf Kommunikationsinhalte zugreifen (siehe z.B. <a href="https://signal.org/de/">[1]</a>, <a href="https://conversations.im/omemo/">[2]</a>). Die neue Ende-Verschlüsselung denkt dieses Konzept weiter und sorgt dafür, dass wirklich niemand auf Kommunikationsinhalte zugreifen kann. Dazu werden Nachrichten noch vor der Übertragung über unsichere Kommunikationsnetze mit Hilfe einer <a href="https://de.wikipedia.org/wiki/Nullfunktion">konstant-linearen Nullabbildung</a> kryptographisch vor unerwünschtem Belauschen gesichert. Die Ende-Verschlüsselung ist das erste massentaugliche Verschlüsselungsverfahren mit <a href="https://de.wikipedia.org/wiki/Perfekte_Sicherheit">perfekter</a>, <a href="https://en.wikipedia.org/wiki/Information-theoretic_security">informationstheoretischer Sicherheit</a>. Probiere es gleich aus!</p>
+	<h2>Die Ende-Verschlüsselung ausprobieren!</h2>
+	<p>Gebe hier eine Nachricht ein, um sie mit der Ende-Verschlüsselung zu verschlüsseln!</p>
+	<form id="form">
+		<input id="message" type="text" required placeholder="Gebe hier Deine Nachricht ein">
+		<input id="encrypt" type="submit" value="Verschlüsseln!">
+	</form>
+	<span id="notification" class="notify hidden">Deine Nachricht wurde gelöscht!</span>
+	<h2>Das sagen Expert*innen:</h2>
+	// TODO: Expert*innen befragen.
+
+	<h2>Wie funktioniert das ganze technisch? / Informationen für Entwickler*innen</h2>
+	<p>Technisch wird die Ende-Verschlüsselung realisiert über die Integration der Nullfunktion über die Integrationsgrenzen <i>a = <sup>1</sup>&frasl;<sub>m</sub></i> und <i>b = m<sup>2</sup></i>:</p>
+	<img src="null.svg">
+	<script src="end.js"></script>
+</body>
+</html>

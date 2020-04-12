@@ -1,0 +1,119 @@
+@font-face {
+	font-family: 'quicksand';
+	src: url('quicksand/Quicksand-Light.otf');
+	font-weight: lighter;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'quicksand';
+	src: url('quicksand/Quicksand-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'quicksand';
+	src: url('quicksand/Quicksand-Bold.otf');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'quicksand';
+	src: url('quicksand/Quicksand-LightItalic.otf');
+	font-weight: lighter;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'quicksand';
+	src: url('quicksand/Quicksand-Italic.otf');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'quicksand';
+	src: url('quicksand/Quicksand-BoldItalic.otf');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'quicksand-dash';
+	src: url('quicksand/Quicksand_Dash.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background: #000429;
+	text-align: center;
+	color: white;
+	margin: 6em 2em;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	font-family: quicksand;
+}
+
+p {
+	font-weight: normal;
+	max-width: 900px;
+	margin: auto;
+}
+
+a {
+	color: white;
+}
+
+h1 {
+	color: #F20574;
+	margin: 3em auto;
+	transform: rotate(-1deg);
+}
+
+h2 {
+	margin-top: 3em;
+}
+
+input {
+	margin: 2em .5em;
+	padding: 1em .5em;
+	font-family: 'quicksand';
+	font-weight: bold;
+}
+
+#message {
+	min-width: 17em;
+}
+
+#encrypt {
+	padding: .8em .5em;
+	font-style: italic;
+}
+
+img {
+	display: block;
+	margin: 1em auto auto auto;
+}
+
+.notify {
+	display: block;
+	position: fixed;
+	bottom: 4em;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: 1em 4em;
+	width: 11em;
+	background: #2B1773;
+	border-radius: 1em;
+	opacity: .9;
+	font-size: 1.2em;
+	text-shadow: 0 0 10px #000429;
+	font-weight: bold;
+	transition: opacity 1s cubic-bezier(.77,0,.41,1.3), bottom 700ms cubic-bezier(.77,0,.41,1.3);
+	border-bottom: 2px solid #F20574;
+	cursor: default;
+}
+
+.notify.hidden {
+	opacity: 0;
+	bottom: -10em;
+	
+}
